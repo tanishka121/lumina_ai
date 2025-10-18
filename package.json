@@ -1,4 +1,5 @@
-{
+{   "homepage": "https://tanishka121.github.io/lumina_ai",
+
   "name": "lumina_ai",
   "private": true,
   "version": "0.0.0",
@@ -8,6 +9,8 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview"
+     "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@google/genai": "^1.16.0",
